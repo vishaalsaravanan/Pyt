@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestHello-20210617224026" tests="1" time="0.011">
+	<testcase classname="TestHello" name="test_hello" time="0.011">
+		<error message="name 'render_template' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 16, in test_hello
+    rv = self.app.get('/')
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/werkzeug/test.py", line 1127, in get
+    return self.open(*args, **kw)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/testing.py", line 220, in open
+    follow_redirects=follow_redirects,
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/werkzeug/test.py", line 1072, in open
+    response = self.run_wsgi_app(request.environ, buffered=buffered)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/werkzeug/test.py", line 943, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/werkzeug/test.py", line 1229, in run_wsgi_app
+    app_rv = app(environ, start_response)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/administrator/github/dply/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/administrator/github/Python DW5/application.py", line 12, in index
+    return render_template('index.html')
+NameError: name 'render_template' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

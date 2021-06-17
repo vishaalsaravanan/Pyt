@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestHello-20210617223932" tests="1" time="0.980">
+	<testcase classname="TestHello" name="test_hello" time="0.980">
+		<error message="'404 NOT FOUND' != '200 OK'
+- 404 NOT FOUND
++ 200 OK
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 33, in test_hello
+    self.assertEqual(rv.status, '200 OK')
+AssertionError: '404 NOT FOUND' != '200 OK'
+- 404 NOT FOUND
++ 200 OK
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
